@@ -5,60 +5,63 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HomeWork #1</title>
+    <title>HomeWork</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./css/styles.css" />
-    
 </head>
 
 <body>
     <!-- Шапка-->
-    <header class="header">
-        <nav>
-            <a href="./index.html" class="logo"><span class="logostyle">Web</span>Studio</a>
-            <ul class="site-nav list">
-                <li><a href="./index.html" class="link current">Студия</a></li>
-                <li><a href="./portfolio.html" class="link">Портфолио</a></li>
-                <li><a href="./contacts.html" class="link">Контакты</a></li>
-            </ul>
-        </nav>
-        <ul class="list">
-            <li><address><a href="mailto:info@devstudio.com" class="address-header">info@devstudio.com</a></address></li>
-            <li><address><a href="tel:+380961111111" class="address-header">+38 096 111 11 11</a></address></li>
-        </ul>
+    <header class="header-page">
+            <nav class="container main-nav">
+                <a href="./index.html" class="logo"><span class="logostyle">Web</span>Studio</a>
+                <ul class="site-nav list">
+                    <li class="item"><a href="./index.html" class="link current">Студия</a></li>
+                    <li class="item"><a href="./portfolio.html" class="link">Портфолио</a></li>
+                    <li class="item"><a href="./contacts.html" class="link">Контакты</a></li>
+                </ul>
+                <ul class="address-nav list">
+                    <li class="item"><address><a href="mailto:info@devstudio.com" class="address-header">info@devstudio.com</a></address></li>
+                    <li class="item"><address><a href="tel:+380961111111" class="address-header">+38 096 111 11 11</a></address></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <!-- Business solutions -->
         <div>
             <section class="solutions">
                 <h1 class="solutions-title">Эффективные решения <br>для вашего бизнеса</h1>
-                <button type="button" class="button-primary">Заказать услугу</button>
+                <button type="button" class="button primary">Заказать услугу</button>
             </section>
         </div>
         <!--Our advantages-->
         <section class="section">
+        <div class="container">
             <h2 class="section-title">Наши преймущества</h2>
             <ul class="advantages list">
-                <li>
+                <li class="item">
                     <b>Внимание к деталям</b>
                     <p class="advantages-description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
                 </li>
-                <li>
+                <li class="item">
                     <b>Пунктуальность</b>
                     <p class="advantages-description">Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
                 </li>
-                <li>
+                <li class="item">
                     <b>Планирование</b>
                     <p class="advantages-description">Равным образом консультация с широким активом в значительной степени обуславливает.</p>
                 </li>
-                <li>
+                <li class="item">
                     <b>Современные технологии</b>
                     <p class="advantages-description">Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
                 </li>
             </ul>
+        </div>
         </section>
         <!--Our Services-->
         <section class="section">
+        <div class="container">
             <h2 class="section-title">Чем мы занимаемся</h2>
             <ul class="services list">
                 <li>
@@ -71,38 +74,43 @@
                     <img src="./images/box3.jpg" alt="creative artist web-design is working-" />
                 </li>
             </ul>
+        </div>
         </section>
         <!--Our team-->
-        <section class="section">
+        <section class="section team">
+        <div class="container">
             <h2 class="section-title">Наша команда</h2>
             <ul class="team list">
-                <li>
+                <li class="team-box">
                     <img src="./images/pdesigner.jpg" alt="Игорь Демьяненко" class="image-small"/>
                     <h3 class="our-team">Игорь Демьяненко</h3>
                     <p class="team-speacility">Product Designer</p>
                 </li>
-                <li>
+                <li class="team-box">
                     <img src="./images/developer.jpg" alt="Ольга Репина" class="image-small"/>
                     <h3 class="our-team">Ольга Репина</h3>
                     <p class="team-speacility">Frontend Developer</p>
                 </li>
-                <li>
+                <li class="team-box">
                     <img src="./images/marketing.jpg" alt="Николай Тарасов" class="image-small"/>
                     <h3 class="our-team">Николай Тарасов</h3>
                     <p class="team-speacility">Marketing</p>
                 </li>
-                <li>
-                    <img src="./images/uideveloper.jpg" alt="Михаил Ермаков" class="image-small"/>
+                <li class="team-box">
+                    <img src="./images/uideveloper.jpg" alt="Михаил Ермаков" class="image-small" />
                     <h3 class="our-team">Михаил Ермаков</h3>
                     <p class="team-speacility">UI Designer</p>
                 </li>
+
             </ul>
+        </div>
         </section>
     </main>
     <!--подвал-->
     <footer>
+    <div class="container">
     <a href="./index.html" class="logo"><span class="logostyle">Web</span>Studio</a>
-        <ul>
+        <ul class="footer list">
             <li>
                 <address>г. Киев, пр-т Леси Украинки, 26</address>
             </li>
@@ -113,6 +121,7 @@
                 <address><a href="tel:+380961111111" class="address-footer">+38 096 111 11 11</a></address>
             </li>
         </ul>
+    </div>
     </footer>
 </body>
 
