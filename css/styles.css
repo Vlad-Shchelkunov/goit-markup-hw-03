@@ -99,15 +99,8 @@ border-bottom: 1px solid #ECECEC;
 .logostyle {
     color: var(--accent-color)
 }
-/* изображения*/
-img {
-    width: 370px;
-}
-.image-small {
-    width: 270px;
-    margin-top: 0;
-    margin-bottom: 30px;
-}
+/* Solutions*/
+
 .solutions {
     background-color: #2F303A;
     text-align: center;
@@ -142,7 +135,6 @@ img {
 
 .advantages {
     display: flex;
-    flex-wrap: wrap;
 
     margin-top: 0;
     margin-bottom: 0;
@@ -152,6 +144,10 @@ img {
 }
 .advantages .item {
     width: 270px;
+    margin-right: 30px;
+}
+.advantages .item:last-child{
+    margin-right: 0;
 }
 .advantages-description {
     margin-top: 10px;
@@ -162,6 +158,20 @@ img {
     color: var(--secondary-text-color);
 
 }
+/* Section Services */
+.services {
+    display: flex;
+}
+
+.services .item {
+    width: 370px;
+    margin-right: 30px;
+}
+.services .item:last-child {
+    margin-right: 0;
+}
+
+/* Section Our team */
 .team-box {
     margin-top: 0;
     margin-bottom: 0;
@@ -186,7 +196,7 @@ img {
     line-height: 1.17;
     color: var(--secondary-text-color);
 }
-
+/* Button */
 .button {
     display: inline-block;
     color: var(--primary-text-color);
@@ -221,7 +231,7 @@ img {
     color: var(--primary-white-color);
     background-color: var(--accent-color);
 }
-
+/* Footer */
 footer {
     background-color: #2F303A;
     color: #FFFFFF;
