@@ -30,7 +30,7 @@ body { background: #E5E5E5;
     margin-bottom: 0;
     padding-top: 94px;
     padding-bottom: 94px;
-    background-color: #F5F4FA;
+    background: #ffffff;
 }
 /* Загаловки секций*/
 .section-title {
@@ -103,21 +103,28 @@ margin-rigth:40px;
     color: var(--accent-color);
 }
 /* Контакты в шапке */
-.header-contacts {
+.header-address {
     display: flex;
     margin-left: auto;
+    align-items: center;
+}
+.header-address .contact-item+.contact-item {
+    margin-left: 50px;
+}
+.header-contact {
+    display: flex;
     color: var(--secondary-text-color);
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     text-decoration: none;
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
-.header-contacts .item+.item {
-    margin-left: 50px;
-}
-.header-contacts:hover,
-.header-contacts:focus {
+
+.header-contact:hover,
+.header-contact:focus {
     color: var(--accent-color)
 }
 /* Solutions / Эффективные решения */
@@ -127,6 +134,7 @@ margin-rigth:40px;
     margin-top: 0;
     margin-bottom: 0;
     padding: 200px 0;
+    height: 600px;
 }
 .solutions-title {
     margin-top: 0;
@@ -161,7 +169,7 @@ margin-rigth:40px;
     margin-bottom: 0;
     padding-top: 94px;
     padding-bottom: 0;
-    background-color: #F5F4FA;
+    background-color: #ffffff;
 }
 .transparent-title {
 margin-top: 0;
@@ -219,6 +227,9 @@ line-height: 1.17;
 .team {
     display: flex;
 }
+.section.teamcolor {
+    background-color: #F5F4FA;
+}
 .team-image {
     width: 270px;
 }
@@ -236,6 +247,9 @@ line-height: 1.17;
 .team .item:last-child {
     margin-right: 0;
 }
+.team-box  {
+    margin: 30px 0;
+}
 .our-team {
     margin-top: 0;
     margin-bottom: 10px;
@@ -245,7 +259,7 @@ line-height: 1.17;
 }
 .team-speciality {
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 0;
     font-size: 16px;
     font-weight: 400;
     line-height: 1.17;
