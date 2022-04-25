@@ -6,7 +6,7 @@
     --primary-white-color: #ffffff;
     --secondary-background-color: #2F303A;
 }
-body { background: #E5E5E5;
+body { background: #ffffff;
     color: var(--primary-text-color);
     font-family: Roboto, sans-serif;
     letter-spacing: 0.03em;
@@ -26,11 +26,8 @@ body { background: #E5E5E5;
 }
 /* Базовые параметры секций */
 .section {
-    margin-top: 0;
-    margin-bottom: 0;
     padding-top: 94px;
     padding-bottom: 94px;
-    background: #ffffff;
 }
 /* Загаловки секций*/
 .section-title {
@@ -127,8 +124,8 @@ margin-rigth:40px;
 .header-contact:focus {
     color: var(--accent-color)
 }
-/* Solutions / Эффективные решения */
-.solutions {
+/* Hero / Эффективные решения */
+.section.hero {
     background-color: #2F303A;
     border: 1px solid #000000;
     text-align: center;
@@ -138,7 +135,7 @@ margin-rigth:40px;
     max-width: 1600px;
     padding: 200px 0;
 }
-.solutions-title {
+.hero-title {
     margin-top: 0;
     margin-bottom: 0;
     color: var(--primary-white-color);
@@ -179,24 +176,22 @@ margin-rigth:40px;
     clip: rect(0 0 0 0);
     overflow: hidden;
 }
-/* Advantages / Наши преймущества (с условным заголовком) */
-.section-transparent-title{
-    margin-top: 0;
-    margin-bottom: 0;
+/* Work / Наши преймущества (с условным заголовком) */
+.section.work {
     padding-top: 94px;
     padding-bottom: 0;
     background-color: #ffffff;
 }
-.advantages {
+.work {
     display: flex;
 }
-.advantages .item {
+.work .item {
     margin-right: 30px;
 }
-.advantages .item:last-child {
+.work .item:last-child {
     margin-right: 0;
 }
-.advantages-title {
+.work-title {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -204,7 +199,7 @@ margin-rigth:40px;
     margin-top: 0;
     margin-bottom: 10px;
 }
-.advantages-description {
+.work-description {
     margin-top: 0;
     margin-bottom: 0;
     font-size: 14px;
@@ -212,34 +207,34 @@ margin-rigth:40px;
     line-height: 1.71;
     color: var(--secondary-text-color);
 }
-/* Services / Чем мы занимаемся */
-.services {
+/* About / Чем мы занимаемся */
+.about {
     display: flex;
 }
 
-.services .item {
+.about .item {
     margin-right: 30px;
 }
 
-.services .item:last-child {
+.about .item:last-child {
     margin-right: 0;
 }
-/* Изображения для services */
-.services-image {
+/* Изображения для work */
+.about-image {
     width: 370px;
 }
 
 /* Our team / Наша команда*/
-.team {
+.team-box {
     display: flex;
 }
-.section.teamcolor {
+.section.team {
     background-color: #F5F4FA;
 }
 .team-image {
     width: 270px;
 }
-.team .item {
+.team-box .item {
     margin-top: 0;
     margin-bottom: 0;
     margin-right: 30px;
@@ -250,10 +245,10 @@ margin-rigth:40px;
     border-radius: 0px 0px 4px 4px;
     text-align: center;
 }
-.team .item:last-child {
+.team-box .item:last-child {
     margin-right: 0;
 }
-.team-box  {
+.team-thumbs {
     margin: 30px 0;
 }
 .our-team {
