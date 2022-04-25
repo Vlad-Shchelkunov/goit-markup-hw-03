@@ -129,12 +129,14 @@ margin-rigth:40px;
 }
 /* Solutions / Эффективные решения */
 .solutions {
-    background-color: var(--secondary-background-color);
+    background-color: #2F303A;
+    border: 1px solid #000000;
     text-align: center;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
     height: 600px;
+    max-width: 1600px;
+    padding: 200px 0;
 }
 .solutions-title {
     margin-top: 0;
